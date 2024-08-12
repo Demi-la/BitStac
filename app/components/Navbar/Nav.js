@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 const Nav = ({ isSidebarOpen, toggleSideBar }) => {
   return (
     <>
-      <div className="flex justify-between lg:px-10 px-4 py-8 font-[var(--Euclid-Circular-font)]">
+      <div className="flex justify-between lg:px-10 px-4 py-8">
         <div className={isSidebarOpen ? "hidden" : ""}>
           <Image src={logo} alt="Logo" width={"100%"} height={"100%"} />
         </div>

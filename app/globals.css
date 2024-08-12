@@ -4,8 +4,27 @@
 
 :root {
   --btn-color: #1B095D;
-  --Euclid-Circular-font: 'Euclid Circular A', sans-serif;
-
+  --gray-gradient:linear-gradient(315deg, hsla(0, 0%, 73%, 1) 10%, hsla(0, 0%, 96%, 1) 60%);
+  --primary-gradient:linear-gradient(360deg, hsla(0, 0%, 100%, 1) 0%, hsla(192, 100%, 97%, 1) 48%, hsla(0, 0%, 100%, 1) 90%);
+  --virtual-card-gradient:linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(254, 87%, 97%, 1) 43%);
+  --cryto-card-gradient:linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(192, 100%, 97%, 1) 46%);
+}
+.bg-gray-gradient {
+  background: var(--gray-gradient);
+}
+.bg-primary-gradient {
+  background: var(--primary-gradient);
+}
+.bg-virtual-card-gradient {
+  background: var(--virtual-card-gradient);
+}
+.bg-cypto-card-gradient {
+  background: var(--cryto-card-gradient);
+}
+body {
+ font-family: 'Euclid Circular A', sans-serif;
+ overflow-x: hidden;
+ width: 100%;
 }
 
 @layer utilities {
