@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
           <div className="relative lg:right-[-2rem] right-[-0rem] lg:top-[3rem] top-[4rem] lg:w-[100%] lg:h-[100%]  w-[40px] h-[40px]">
             <Image src={swirlArrow} alt="Arrow" />
           </div>
-          <div className="lg:flex gap-8  lg:mx-12 mx-5 mt-[10rem]">
+          <div className="lg:flex gap-8  lg:mx-12 mx-5 mt-[10rem] pb-[4rem]">
             {whyChooseUsData.map((item, index) => (
               <div
                 key={index}
