@@ -8,6 +8,7 @@
   --primary-gradient:linear-gradient(360deg, hsla(0, 0%, 100%, 1) 0%, hsla(192, 100%, 97%, 1) 48%, hsla(0, 0%, 100%, 1) 90%);
   --virtual-card-gradient:linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(254, 87%, 97%, 1) 43%);
   --cryto-card-gradient:linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(192, 100%, 97%, 1) 46%);
+  --secondary-gradient:linear-gradient(90deg, hsla(192, 100%, 97%, 1) 4%, hsla(0, 0%, 100%, 1) 40%, hsla(192, 100%, 97%, 1) 99%);
 }
 .bg-gray-gradient {
   background: var(--gray-gradient);
@@ -21,12 +22,25 @@
 .bg-cypto-card-gradient {
   background: var(--cryto-card-gradient);
 }
+.bg-secondary-gradient {
+  background: var(--secondary-gradient);
+}
 body {
  font-family: 'Euclid Circular A', sans-serif;
  overflow-x: hidden;
  width: 100%;
 }
-
+.curved-shape {
+  background-color: white;
+  clip-path: path('M0 0H1304V143.206L157.179 149.697C123.78 149.886 92.4923 133.389 73.7805 105.724L47.5204 66.899L0 0Z');
+}
+.feedback-curved-shape {
+  background-color: white;
+  clip-path: path('M902.279 0H118.54L0 88H988L902.279 0Z');
+}
+.boxShadow {
+  box-shadow: 4px 4px 32px 0px rgba(255, 255, 255, 0.09);
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
