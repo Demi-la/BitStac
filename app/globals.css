@@ -4,43 +4,66 @@
 
 :root {
   --btn-color: #1B095D;
-  --gray-gradient:linear-gradient(315deg, hsla(0, 0%, 73%, 1) 10%, hsla(0, 0%, 96%, 1) 60%);
-  --primary-gradient:linear-gradient(360deg, hsla(0, 0%, 100%, 1) 0%, hsla(192, 100%, 97%, 1) 48%, hsla(0, 0%, 100%, 1) 90%);
-  --virtual-card-gradient:linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(254, 87%, 97%, 1) 43%);
-  --cryto-card-gradient:linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(192, 100%, 97%, 1) 46%);
-  --secondary-gradient:linear-gradient(90deg, hsla(192, 100%, 97%, 1) 4%, hsla(0, 0%, 100%, 1) 40%, hsla(192, 100%, 97%, 1) 99%);
+  --gray-gradient: linear-gradient(315deg, hsla(0, 0%, 73%, 1) 10%, hsla(0, 0%, 96%, 1) 60%);
+  --primary-gradient: linear-gradient(360deg, hsla(0, 0%, 100%, 1) 0%, hsla(192, 100%, 97%, 1) 48%, hsla(0, 0%, 100%, 1) 90%);
+  --virtual-card-gradient: linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(254, 87%, 97%, 1) 43%);
+  --cryto-card-gradient: linear-gradient(315deg, hsla(255, 4%, 58%, 1) 0%, hsla(192, 100%, 97%, 1) 46%);
+  --secondary-gradient: linear-gradient(90deg, hsla(192, 100%, 97%, 1) 4%, hsla(0, 0%, 100%, 1) 40%, hsla(192, 100%, 97%, 1) 99%);
 }
+
 .bg-gray-gradient {
   background: var(--gray-gradient);
 }
+
 .bg-primary-gradient {
   background: var(--primary-gradient);
 }
+
 .bg-virtual-card-gradient {
   background: var(--virtual-card-gradient);
 }
+
 .bg-cypto-card-gradient {
   background: var(--cryto-card-gradient);
 }
+
 .bg-secondary-gradient {
   background: var(--secondary-gradient);
 }
+
 body {
- font-family: 'Euclid Circular A', sans-serif;
- overflow-x: hidden;
- width: 100%;
+  font-family: 'Euclid Circular A', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
 }
+
 .curved-shape {
   background-color: white;
   clip-path: path('M0 0H1304V143.206L157.179 149.697C123.78 149.886 92.4923 133.389 73.7805 105.724L47.5204 66.899L0 0Z');
 }
- .feedback-bg {
-   border-radius: 1rem;
-   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 88.2% 85.26%, 84.53% 60.52%, 60% 60%, 15% 60%, 12% 85%, 0% 85%);
- }
+
+.feedback-bg {
+  border-radius: 1rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 88.2% 85.26%, 84.53% 60.52%, 60% 60%, 15% 60%, 12% 85%, 0% 85%);
+}
+
 .boxShadow {
   box-shadow: 4px 4px 32px 0px rgba(255, 255, 255, 0.09);
 }
+
+.heroNotification {
+  box-shadow: 2px 2px 9px 0px #33333317;
+  ;
+}
+
+.heroImageMask {
+  -webkit-mask-image: url('../public/assets/svgs/heroImageSkelecton.svg');
+  mask-image: url('../public/assets/svgs/heroImageSkelecton.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

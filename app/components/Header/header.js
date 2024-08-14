@@ -1,14 +1,17 @@
 import Image from "next/image";
-import exclude from "../../../public/assets/pngs/exclude.png";
-import { PiLightning } from "react-icons/pi";
+import heroImage from "../../../public/heroImage.png";
 import { socials } from "./data";
 import arrow from "../../../public/assets/svgs/arrow.svg";
 import { global } from "../products/data";
-
+import { GoArrowSwitch } from "react-icons/go";
+import tether from "../../../public/assets/svgs/tether.svg"
+import nigerialIcon from "../../../public/assets/svgs/nigerialIcon.svg";
+import ukIcon from "../../../public/assets/svgs/ukIcon.svg";
+import { PiArrowsHorizontalLight, PiLightning, PiBankFill } from "react-icons/pi";
 const Header = () => {
   return (
     <div className="bg-primary-gradient mt-8 relative">
-      <div className="block lg:flex gap-[5rem] lg:px-10 px-4">
+      <div className="block lg:flex gap-[5rem] lg:px-10 px-4 relative">
         <div className="lg:mt-16 mt-8">
           <p className="bg-[#F4F1FE] text-[#1B095D] font-medium lg:text-[12px] md:text-[12px] text-[10px] tracking-[0.12em] py-3 px-3 inline-flex gap-2 rounded-lg">
             <span className="text-lg">
@@ -19,7 +22,7 @@ const Header = () => {
           <h1 className="text-[#121212] lg:text-[3.5rem] md:text-[3rem] text-[1.25rem] font-bold lg:w-[40rem] md:w-[90%] w-[85%] lg:leading-[4.438rem] md:leading-[4.438rem] mt-8">
             Effortless Global Money Transfers at Your Fingertips
           </h1>
-          <p className="text-[#121212] lg:text-[1.25rem] md:text-[1.25rem] text-[12px] font-normal lg:w-[70%] w-full mt-4">
+          <p className="text-[#121212] lg:text-[1.25rem] md:text-[1.25rem] text-[12px] font-normal lg:w-[93%] w-full mt-4">
             Enjoy flexible deposit and withdrawal options, virtual cards, and
             real-time currency conversion—all in one secure app
           </p>
@@ -49,19 +52,51 @@ const Header = () => {
           </div>
         </div>
         <div className="mt-8 lg:0">
-          <Image
-            src={exclude}
-            alt="Hero Image"
-            height={"100%"}
-            width={"100%"}
-            className="md:mx-auto "
-          />
+          <div className="relative w-[90%] h-[90%] mx-auto ">
+            <Image src={heroImage} alt="Logo" className="heroImageMask" />
+          </div>
+        </div>
+      </div>
+
+      <div className="heroNotification bg-white  p-2 gap-4 w-[21%] rounded-lg absolute left-[36rem] top-[34rem] lg:flex hidden ">
+        <div>
+          <p className="bg-[#F4F1FE] h-12 w-12 rounded-lg text-[#1B095D] text-[1.5rem] p-3">
+            <GoArrowSwitch />
+          </p>
+        </div>
+        <div>
+          <p className="font-medium text-[16px]">Swap Successful</p>
+          <div className="flex gap-1 font-semibold text-[12px] mt-2">
+            <p>USDT</p>
+            <Image src={tether} alt="USDT" />
+            <PiArrowsHorizontalLight className="mt-1 mx-2" />
+            <Image src={nigerialIcon} alt="Naira" />
+            <p>NGN</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="heroNotification bg-white p-2 gap-4 w-[21%] rounded-lg absolute right-[2rem] top-[0.5rem] lg:flex hidden ">
+        <div>
+          <p className="bg-[#F4F1FE] h-12 w-12 rounded-lg text-[#1B095D] text-[1.5rem] p-3">
+            <PiBankFill />
+          </p>
+        </div>
+        <div>
+          <p className="font-medium text-[16px]">You’ve received £2,000 </p>
+          <div className="flex gap-1 font-semibold text-[12px] mt-2">
+            <p>GBP</p>
+            <Image src={ukIcon} alt="GBP" />
+            <PiArrowsHorizontalLight className="mt-1 mx-2" />
+            <Image src={nigerialIcon} alt="Naira" />
+            <p>NGN</p>
+          </div>
         </div>
       </div>
       {/* second section */}
       <div className="relative">
-        <div className="text-center mt-[7rem] text-[#121212]  flex relative justify-center">
-          <div className="absolute lg:left-[9rem] left-0 lg:top-3 top-[5rem] lg:w-full lg:w-full w-[50px] h-[50px]">
+        <div className="text-center lg:mt-[12rem] mt-[7rem] text-[#121212]  flex relative justify-center">
+          <div className="absolute lg:left-[9rem] left-0 lg:top-3 top-[5rem]  lg:w-full w-[50px] h-[50px]">
             <Image src={arrow} alt="Arrow" />
           </div>
           <div>

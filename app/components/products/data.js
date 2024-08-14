@@ -1,4 +1,4 @@
-import arrowBulletPoint from "../../../public/assets/svgs/arrowBulletPoint.svg"
+import arrowBulletPoint from "../../../public/assets/svgs/arrowBulletPoint.svg";
 import globe from "../../../public/assets/pngs/globe.png";
 import cryptocurrency from "../../../public/assets/pngs/cryptocurrency.png";
 import currencyConverter from "../../../public/assets/pngs/currencyConverter.png";
@@ -15,7 +15,6 @@ export const global = [
     icon: arrowBulletPoint,
     globeImage: globe,
   },
-  
 ];
 
 export const cyptoVirtualCard = [

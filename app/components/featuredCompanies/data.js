@@ -1,8 +1,8 @@
-import appStore from "../../../public/assets/svgs/appStore.svg"
-import playStore from "../../../public/assets/svgs/playStore.svg"
-export const socials = [
+import blackAppStoreIcon from "../../../public/assets/svgs/blackAppStoreIcon.svg";
+import playStore from "../../../public/assets/svgs/playStore.svg";
+export const socialsData = [
   {
-    icon: appStore,
+    icon: blackAppStoreIcon,
     message: "Coming Soon",
     platform: "App Store",
     altMessage: "App Store Logo",
