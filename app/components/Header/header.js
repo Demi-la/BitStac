@@ -94,7 +94,7 @@ const Header = () => {
         </div>
       </div>
       {/* second section */}
-      <div className="relative">
+      <div className="relative" id="products">
         <div className="text-center lg:mt-[12rem] mt-[7rem] text-[#121212]  flex relative justify-center">
           <div className="absolute lg:left-[9rem] left-0 lg:top-3 top-[5rem]  lg:w-full w-[50px] h-[50px]">
             <Image src={arrow} alt="Arrow" />

@@ -7,7 +7,10 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 const Feedback = () => {
   return (
     <>
-      <div className="bg-secondary-gradient relative  px-4 mx-auto lg:pb-[5rem] pb-8">
+      <div
+        className="bg-secondary-gradient relative  px-4 mx-auto lg:pb-[5rem] pb-8"
+        id="blog"
+      >
         <div className=" lg:px-[12rem]  pt-[12rem] ">
           <div className="absolute lg:left-14 top-[4rem] w-[50px] h-[50px] lg:w-[100%] lg:h-[100%]">
             <Image src={blackSwirlArrow} alt="Arrow" />

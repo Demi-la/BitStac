@@ -10,7 +10,10 @@ const Faq = () => {
   };
   return (
     <>
-      <div className="bg-[#F5FDFF] lg:px-[5rem] px-4 lg:py-[2rem] py-[4rem]">
+      <div
+        className="bg-[#F5FDFF] lg:px-[5rem] px-4 lg:py-[2rem] py-[4rem]"
+        id="faqs"
+      >
         <div className="text-[#121212] text-center ">
           <h2 className="lg:text-[40px] md:text-[40px] text-[20px] font-bold lg:w-[43%] mx-auto">
             Frequently Asked Question

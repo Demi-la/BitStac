@@ -5,7 +5,10 @@ import { whyChooseUsData } from "./data";
 const WhyChooseUs = () => {
   return (
     <>
-      <div className="relative  lg:mt-[8rem] mt-[5rem] md:mt-[8rem]">
+      <div
+        className="relative  lg:mt-[8rem] mt-[5rem] md:mt-[8rem]"
+        id="about"
+      >
         <div className="bg-[#1B2029] relative border-none ">
           <div className="curved-shape absolute  right-0 h-[400px] lg:z-10 lg:w-[87%] w-[100%]">
             <div className="text-[#121212] text-center lg:mt-6 mt-[3rem]">

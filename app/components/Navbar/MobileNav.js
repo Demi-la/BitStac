@@ -1,5 +1,6 @@
 import { FaTimes } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../../../public/assets/pngs/logo.png";
 
 const MobileNav = ({ isSidebarOpen, toggleSideBar }) => {
@@ -32,10 +33,20 @@ const MobileNav = ({ isSidebarOpen, toggleSideBar }) => {
           </div>
           <div className="">
             <ul className="flex flex-col gap-4 font-normal text-[16px] text-[#121212] mt-2">
-              <li>Products</li>
-              <li>About</li>
-              <li>Blog</li>
-              <li>FAQs</li>
+              <li>
+                <Link href="#products">Products</Link>
+              </li>
+              <li>
+                <Link href="#about">About</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="#blog">Blog</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="#faqs">FAQs</Link>
+              </li>
             </ul>
             <div className="mt-4">
               <button className="bg-[var(--btn-color)] px-[18px] py-[12px] rounded-md text-white font-bold text-[14px] tracking-[0.12em]">
