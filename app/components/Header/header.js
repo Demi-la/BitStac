@@ -58,7 +58,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="heroNotification bg-white  p-2 gap-4 w-[21%] rounded-lg absolute left-[36rem] top-[34rem] lg:flex hidden ">
+      <div className="heroNotification bg-white  p-2 gap-4 w-[21%] rounded-lg absolute left-[38rem] top-[34rem] lg:flex hidden ">
         <div>
           <p className="bg-[#F4F1FE] h-12 w-12 rounded-lg text-[#1B095D] text-[1.5rem] p-3">
             <GoArrowSwitch />

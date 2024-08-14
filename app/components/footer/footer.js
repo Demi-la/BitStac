@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="">
               <input
                 placeholder="Email Address"
-                className=" lg:pl-[18px] md:pl-[18px] pl-[12px] lg:py-[16px] md:py-[16px] py-[12px] lg:w-[20rem] w-[15rem] rounded-md border border-1-[#98A2B3] placeholder-[#98A2B3]"
+                className=" lg:pl-[18px] md:pl-[18px] pl-[12px] lg:py-[16px] md:py-[16px] py-[12px] lg:w-[20rem] w-[13rem] rounded-md border border-1-[#98A2B3] placeholder-[#98A2B3]"
               />
             </div>
             <div>

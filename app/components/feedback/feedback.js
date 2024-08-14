@@ -64,7 +64,7 @@ const Feedback = () => {
           </div>
         </div>
       </div>
-      <div className="lg:text-[48px] text-[30px] flex text-center justify-center relative lg:top-[-20rem] md:top-[-8rem] top-[-16rem] lg:gap-[55%] gap-[45%]">
+      <div className="lg:text-[48px] text-[30px] flex text-center justify-center relative lg:top-[-20rem] md:top-[-8rem] top-[-8rem] lg:gap-[55%] gap-[45%]">
         <p>
           {" "}
           <GoArrowLeft />
