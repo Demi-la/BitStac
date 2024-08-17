@@ -12,3 +12,25 @@ export const productSuccess = [
     text: "Virtual Card Issued ",
   },
 ];
+export const feedbackData = [
+  {
+    message:
+      "This app has been working wonderfully well for me and i have been using it for a while now",
+    author: "Yetunde Adeleke, CEO Fumzy",
+  },
+  {
+    message:
+      "This app has been working wonderfully well for me and i have been using it for a while now",
+    author: "Yetunde Adeleke, CEO Fumzy",
+  },
+  {
+    message:
+      "This app has been working wonderfully well for me and i have been using it for a while now",
+    author: "Yetunde Adeleke, CEO Fumzy",
+  },
+  {
+    message:
+      "This app has been working wonderfully well for me and i have been using it for a while now",
+    author: "Yetunde Adeleke, CEO Fumzy",
+  },
+];

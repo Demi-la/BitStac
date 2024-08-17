@@ -51,14 +51,14 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <div className="mt-8 lg:0">
-          <div className="relative w-[90%] h-[90%] mx-auto ">
+        <div className="relative mt-8 lg:mt-0">
+          <div className="relative lg:w-[90%] lg:h-[90%] mx-auto">
             <Image src={heroImage} alt="Logo" className="heroImageMask" />
           </div>
         </div>
       </div>
 
-      <div className="heroNotification bg-white  p-2 gap-4 w-[21%] rounded-lg absolute left-[38rem] top-[34rem] lg:flex hidden ">
+      <div className="heroNotification bg-white p-2 gap-4 w-[21%] rounded-lg absolute left-[38rem] top-[32rem] lg:flex hidden">
         <div>
           <p className="bg-[#F4F1FE] h-12 w-12 rounded-lg text-[#1B095D] text-[1.5rem] p-3">
             <GoArrowSwitch />
@@ -76,14 +76,14 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="heroNotification bg-white p-2 gap-4 w-[21%] rounded-lg absolute right-[2rem] top-[0.5rem] lg:flex hidden ">
+      <div className="heroNotification bg-white p-2 gap-4 w-[20%] rounded-lg absolute right-[1.5rem] top-[-1rem] lg:flex hidden">
         <div>
           <p className="bg-[#F4F1FE] h-12 w-12 rounded-lg text-[#1B095D] text-[1.5rem] p-3">
             <PiBankFill />
           </p>
         </div>
         <div>
-          <p className="font-medium text-[16px]">You’ve received £2,000 </p>
+          <p className="font-medium text-[16px]">You’ve received £2,000</p>
           <div className="flex gap-1 font-semibold text-[12px] mt-2">
             <p>GBP</p>
             <Image src={ukIcon} alt="GBP" />

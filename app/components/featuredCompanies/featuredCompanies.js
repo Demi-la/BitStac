@@ -4,6 +4,8 @@ import capitalOneLogo from "../../../public/assets/pngs/capitalOneLogo.png";
 import hsbcLogo from "../../../public/assets/pngs/hsbcLogo.png";
 import rightPattern from "../../../public/assets/svgs/rightPattern.svg";
 import leftPattern from "../../../public/assets/svgs/leftPattern.svg";
+import leftMobilePattern from "../../../public/assets/svgs/leftMobilePattern.svg";
+import rightMobilePattern from "../../../public/assets/svgs/rightMobilePattern.svg";
 import { socialsData } from "./data";
 import Image from "next/image";
 
@@ -32,29 +34,46 @@ const FeaturedCompanies = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#1B2029] lg:mx-10 md:mx-10 mx-4 relative lg:h-[30rem] md:h-[30rem] rounded-3xl">
+      <div className="bg-[#1B2029] lg:mx-10 md:mx-10 mx-4 relative lg:h-[30rem] md:h-[30rem]  h-[15rem] rounded-3xl">
         <div className="flex justify-between relative z-0">
           <div>
             <Image
               src={leftPattern}
               alt="Pattern"
-              className="lg:w-[100%] lg:h-[100%] md:w-[100%] md:h-[100%] w-[50%] h-[50%] "
+              className="w-[100%] h-[100%] hidden lg:flex md:flex "
             />
           </div>
           <div>
             <Image
               src={rightPattern}
               alt="Pattern"
-              className="lg:w-[100%] lg:h-[100%]  md:w-[100%] md:h-[100%] w-[50%] h-[50%] lg:transform scale-x-[-1] lg:relative md:relative absolute right-0 bottom-0 sm:static"
+              className="w-[100%] h-[100%] transform scale-x-[-1] relative   right-0 bottom-0 sm:static hidden lg:flex md:flex"
             />
           </div>
         </div>
-        <div className="absolute z-[99] lg:top-[2rem] md:top-[2rem]  top-[-1rem] py-[3rem] text-center">
+
+        <div className="flex justify-between relative h-[100%]">
+          <div className="absolute bottom-0">
+            <Image
+              src={leftMobilePattern}
+              alt="Pattern"
+              className="flex lg:hidden md:hidden w-[100%] h-[100%] "
+            />
+          </div>
+          <div className="absolute right-0">
+            <Image
+              src={rightMobilePattern}
+              alt="Pattern"
+              className="flex lg:hidden md:hidden w-[100%] h-[100%]  relative "
+            />
+          </div>
+        </div>
+        <div className="absolute z-[99] lg:top-[2rem] md:top-[2rem]  top-[-1rem] py-[3rem] text-center ">
           <div className="text-white  lg:ml-14 md:ml-14">
-            <h2 className="font-semibold lg:text-[40px] md:text-[40px] text-[18px]  lg:w-[50%] md:w-[60%] lg:mx-auto md:mx-auto">
+            <h2 className="font-semibold lg:text-[40px] md:text-[40px] text-[18px]  lg:w-[50%] md:w-[60%] lg:mx-auto md:mx-auto mt-4 lg:mt-0">
               Get Started With Bitstac Today
             </h2>
-            <p className="font-light lg:text-[24px] md:text-[24px] text-[12px]  lg:w-[60%] md:w-[70%] mx-auto mt-6">
+            <p className="font-light lg:text-[24px] md:text-[24px] text-[12px]  lg:w-[60%] md:w-[70%]  w-[90%]  mx-auto mt-2">
               Experience the ultimate convenience and control over your finances
               with our cutting-edge technology.
             </p>

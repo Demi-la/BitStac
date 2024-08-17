@@ -4,6 +4,7 @@ import facebook from "../../../public/assets/svgs/facebook.svg";
 import twitter from "../../../public/assets/svgs/twitter.svg";
 import instagram from "../../../public/assets/svgs/instagram.svg";
 import linkedin from "../../../public/assets/svgs/linkedin.svg";
+import logo from "../../../public/assets/pngs/logo.png";
 const Footer = () => {
   return (
     <>
@@ -17,14 +18,14 @@ const Footer = () => {
               Get all latest Bitstac New delivered to your mail box
             </p>
           </div>
-          <div className="flex lg:gap-4 gap-2 mt-6 lg:mt-0">
-            <div className="">
+          <div className="flex w-full lg:w-auto lg:gap-4 gap-2 mt-6 lg:mt-0">
+            <div className="flex-grow">
               <input
                 placeholder="Email Address"
                 className=" lg:pl-[18px] md:pl-[18px] pl-[12px] lg:py-[16px] md:py-[16px] py-[12px] lg:w-[20rem] w-[13rem] rounded-md border border-1-[#98A2B3] placeholder-[#98A2B3]"
               />
             </div>
-            <div>
+            <div className="flex-grow">
               <button className="bg-[var(--btn-color)] lg:px-[18px] md:px-[18px]  px-[12px] py-[16px] rounded-md text-white font-bold lg:text-[14px] md:text-[14px] text-[12px] tracking-[0.12em]">
                 SUBSCRIBE
               </button>
@@ -32,8 +33,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex lg:flex-row md:flex-row flex-col lg:justify-between md:justify-between justify-center items-center mt-[4rem]">
-          <div>
+          <div className="hidden lg:flex md:flex">
             <Image src={footerLogo} alt="Logo" width={"100%"} height={"100%"} />
+          </div>
+          <div className="flex lg:hidden md:hidden">
+            <Image src={logo} alt="Logo" width={"100%"} height={"100%"} />
           </div>
           <div className="flex gap-12 lg:hidden md:hidden mt-[2rem]">
             <Image src={facebook} alt="Logo" width={"100%"} height={"100%"} />
