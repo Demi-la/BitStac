@@ -5,12 +5,9 @@ import { whyChooseUsData } from "./data";
 const WhyChooseUs = () => {
   return (
     <>
-      <div
-        className="relative  lg:mt-[8rem] mt-[5rem] md:mt-[8rem]"
-        id="about"
-      >
-        <div className="bg-[#1B2029] relative border-none ">
-          <div className="curved-shape absolute  right-0 h-[400px] lg:z-10 lg:w-[87%] w-[100%]">
+      <div className="relative  lg:mt-[8rem] mt-[5rem] md:mt-[8rem]" id="about">
+        <div className="bg-[#1B2029] relative border-none">
+          <div className="curved-shape absolute  right-0 h-[400px] lg:z-10 lg:w-[87%] w-[100%] top-[-1rem] hidden md:block lg:block">
             <div className="text-[#121212] text-center lg:mt-6 mt-[3rem]">
               <h1 className="font-bold lg:text-[40px] md:text-[40px] text-[18px]">
                 Why Choose Us
@@ -20,10 +17,22 @@ const WhyChooseUs = () => {
               </p>
             </div>
           </div>
-          <div className="relative lg:right-[-2rem] right-[-0rem] lg:top-[3rem] top-[4rem] lg:w-[100%] lg:h-[100%]  w-[40px] h-[40px]">
+          <div>
+            <div className="Mobilecurved-shape absolute  right-0 h-[400px] z-[99] w-[80%] top-[-1.3rem] lg:hidden md:hidden block ">
+              <div className="text-[#121212] text-center mt-6 ">
+                <h1 className="font-bold lg:text-[40px] md:text-[40px] text-[18px] mt-6">
+                  Why Choose Us
+                </h1>
+                <p className="font-normal text-[16px]  ml-[10%]  w-[80%] mt-2 ">
+                  Discover the unique advantages that set us apart
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative lg:right-[-2rem] right-[-1rem] lg:top-[3rem] top-[2rem] lg:w-[100%] lg:h-[100%]  w-[70px] h-[70px]">
             <Image src={swirlArrow} alt="Arrow" />
           </div>
-          <div className="lg:flex gap-8  lg:mx-12 mx-5 mt-[10rem] pb-[4rem]">
+          <div className="lg:flex gap-8  lg:mx-12 mx-5 lg:mt-[10rem] md:mt-[10rem] mt-[8rem] pb-[4rem]">
             {whyChooseUsData.map((item, index) => (
               <div
                 key={index}

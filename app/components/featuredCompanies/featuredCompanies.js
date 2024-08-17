@@ -40,7 +40,8 @@ const FeaturedCompanies = () => {
             <Image
               src={leftPattern}
               alt="Pattern"
-              className="w-[100%] h-[100%] hidden lg:flex md:flex "
+              className="w-[100%] h-[100%] hidden lg:flex md:flex"
+              style={{ filter: "brightness(55%)" }}
             />
           </div>
           <div>
@@ -48,6 +49,7 @@ const FeaturedCompanies = () => {
               src={rightPattern}
               alt="Pattern"
               className="w-[100%] h-[100%] transform scale-x-[-1] relative   right-0 bottom-0 sm:static hidden lg:flex md:flex"
+              style={{ filter: "brightness(55%)" }}
             />
           </div>
         </div>
@@ -58,6 +60,7 @@ const FeaturedCompanies = () => {
               src={leftMobilePattern}
               alt="Pattern"
               className="flex lg:hidden md:hidden w-[100%] h-[100%] "
+              style={{ filter: "brightness(55%)" }}
             />
           </div>
           <div className="absolute right-0">
@@ -65,6 +68,7 @@ const FeaturedCompanies = () => {
               src={rightMobilePattern}
               alt="Pattern"
               className="flex lg:hidden md:hidden w-[100%] h-[100%]  relative "
+              style={{ filter: "brightness(55%)" }}
             />
           </div>
         </div>
