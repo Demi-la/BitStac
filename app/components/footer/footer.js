@@ -1,5 +1,4 @@
 import Image from "next/image";
-import footerLogo from "../../../public/assets/svgs/footerLogo.svg";
 import facebook from "../../../public/assets/svgs/facebook.svg";
 import twitter from "../../../public/assets/svgs/twitter.svg";
 import instagram from "../../../public/assets/svgs/instagram.svg";
@@ -33,10 +32,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex lg:flex-row md:flex-row flex-col lg:justify-between md:justify-between justify-center items-center mt-[4rem]">
-          <div className="hidden lg:flex md:flex">
-            <Image src={footerLogo} alt="Logo" width={"100%"} height={"100%"} />
-          </div>
-          <div className="flex lg:hidden md:hidden">
+          <div>
             <Image src={logo} alt="Logo" width={"100%"} height={"100%"} />
           </div>
           <div className="flex gap-12 lg:hidden md:hidden mt-[2rem]">
